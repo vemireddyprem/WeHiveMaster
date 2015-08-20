@@ -194,6 +194,7 @@ public class NetworkMemberAdapter extends BaseAdapter implements IHiveResponse {
 
         @InjectView(R.id.img_member_photo)
         ImageView imgMemberPhoto;
+        //This imageview is for the tick mark.
         ImageView imgMemberStatus;
         @InjectView(R.id.txt_member_username)
         CustomFontTextView txtMemberUserName;
