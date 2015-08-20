@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/general_background"
+              android:orientation="vertical">
+
+    <uk.co.wehive.hive.utils.CustomFontEditText
+        android:id="@+id/edt_search_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_search_background"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="5dp"
+        android:hint="@string/search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:lines="1"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_no_available_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center|left"
+        android:text="@string/no_available_events"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <ListView
+        android:id="@+id/lvt_social_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

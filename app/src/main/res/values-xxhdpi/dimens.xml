@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="height_btn_event_detail">45dp</dimen>
+    <dimen name="margin_10">25dp</dimen>
+</resources>

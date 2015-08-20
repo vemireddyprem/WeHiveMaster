@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<uk.co.wehive.hive.utils.PhotoCarouselLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lyt_user_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/user"
+            android:src="@drawable/ic_userphoto_menu"/>
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_user_photo"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:fontName="Raleway-Light.ttf"/>
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/img_user_photo"
+            android:textColor="@color/wehive_dark_blue"
+            android:textSize="15sp"
+            app:fontName="Raleway-Light.ttf"/>
+
+    </RelativeLayout>
+
+    <uk.co.wehive.hive.utils.SquareImageView
+        android:id="@+id/img_post_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lyt_user_details"
+        android:layout_marginTop="@dimen/margin_10"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_post_photo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/lyt_user_details"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="center"
+        android:src="@drawable/bt_play"/>
+
+    <FrameLayout
+        android:id="@+id/frame_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_post_photo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/lyt_user_details"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone">
+
+        <VideoView
+            android:id="@+id/video_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bt_like_background"
+        android:drawableLeft="@drawable/ic_heart_active"
+        android:drawablePadding="15dp"
+        android:focusable="false"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:text="@string/like"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:fontName="Raleway-Light.ttf"/>
+
+</uk.co.wehive.hive.utils.PhotoCarouselLayout>

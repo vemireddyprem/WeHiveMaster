@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_background">
+
+    <uk.co.wehive.hive.utils.CustomFontEditText
+        android:id="@+id/txtComment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_textview_share_good_times"
+        android:ellipsize="end"
+        android:hint="@string/say_something_about_this_post"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/white"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtComment"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_user_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_userphoto_menu" />
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_user_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/img_user_photo"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:fontName="Raleway-Light.ttf"
+                android:layout_toLeftOf="@+id/txt_date_comment"
+                android:singleLine="true" />
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_user_username"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/img_user_photo"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:fontName="Raleway-Light.ttf"/>
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_date_comment"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:textColor="@color/wehive_dark_blue"
+                android:textSize="12sp"
+                app:fontName="Raleway-Light.ttf" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_comment_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_userphoto_menu" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/share_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

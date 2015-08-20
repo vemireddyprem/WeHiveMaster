@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_background"
+    android:orientation="vertical">
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/label_background"
+        android:text="@string/good_times"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/text_button_event_user">
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:id="@+id/lblEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:fontName="Raleway-Light.ttf" />
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:id="@+id/lblDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:fontName="Raleway-Light.ttf" />
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:id="@+id/lblPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblEvent"
+            android:layout_margin="5dp"
+            android:textColor="@color/wehive_dark_blue"
+            android:textSize="12sp"
+            app:fontName="Raleway-Light.ttf" />
+
+    </RelativeLayout>
+
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/lvPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

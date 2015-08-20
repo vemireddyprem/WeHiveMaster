@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_background"
+    android:orientation="vertical">
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/tab_button_background"
+        android:gravity="left|center"
+        android:padding="15dp"
+        android:text="@string/change_password"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_terms_and_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_change_password"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/tab_button_background"
+        android:gravity="left|center"
+        android:padding="15dp"
+        android:text="@string/terms_and_conditions_title"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <RelativeLayout
+        android:id="@+id/lyt_check_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_terms_and_conditions"
+        android:layout_margin="10dp">
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/automatic_check_in_to_events"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:fontName="Raleway-Light.ttf" />
+
+        <ToggleButton
+            android:id="@+id/tgb_check_events"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/check_events_background"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyt_check_events"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/automatic_checkin_warning_message"
+        android:textColor="@android:color/white"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/logout_button_background"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:text="@string/logout"
+        android:textColor="@android:color/white"
+        app:fontName="Raleway-Light.ttf" />
+
+</RelativeLayout>

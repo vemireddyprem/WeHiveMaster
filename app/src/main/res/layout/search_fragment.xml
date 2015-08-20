@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/general_background"
+                android:orientation="vertical">
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/transparency_all_artist"
+        android:drawableLeft="@drawable/ic_microphone"
+        android:gravity="right|center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/all_artists"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_artist"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/transparency_all_artist"
+        android:drawableLeft="@drawable/ic_map"
+        android:gravity="right|center"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/search_location"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_location"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/lyt_date_from"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/transparency_date"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/date_from"
+                android:textColor="@android:color/white"
+                app:fontName="Raleway-Light.ttf"/>
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_day_date_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/wehive_blue"
+                android:textSize="50sp"
+                app:fontName="Raleway-Light.ttf"/>
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_date_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/wehive_blue"
+                app:fontName="Raleway-Light.ttf"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_date_to"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/transparency_date"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/date_to"
+                android:textColor="@android:color/white"
+                app:fontName="Raleway-Light.ttf"/>
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_day_date_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/wehive_blue"
+                android:textSize="50sp"
+                app:fontName="Raleway-Light.ttf"/>
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_date_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/wehive_blue"
+                app:fontName="Raleway-Light.ttf"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/wehive_blue"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:text="@string/search_button"
+        android:textColor="@android:color/white"
+        app:fontName="Raleway-Light.ttf"/>
+
+</RelativeLayout>

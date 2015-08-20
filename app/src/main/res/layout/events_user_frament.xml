@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/general_background"
+              android:orientation="vertical"
+              tools:context=".view.login.fragment.EventsUserFragment">
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_pending_posts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/action_bar_background"
+        android:drawableRight="@drawable/ic_right_arrow"
+        android:gravity="center|left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <LinearLayout
+        android:id="@+id/lyButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corners_buttons_events_user"
+        android:orientation="horizontal">
+
+        <uk.co.wehive.hive.utils.CustomFontButton
+            android:id="@+id/btnUpComing"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/round_corners_options_right_selected_menu_events_user"
+            android:text="@string/upcoming"
+            android:textColor="@color/button_events_pressed"
+            android:textSize="14sp"/>
+
+        <uk.co.wehive.hive.utils.CustomFontButton
+            android:id="@+id/btnPast"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/round_corners_options_left_unselected_menu_events_user"
+            android:text="@string/past"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <eu.erikw.PullToRefreshListView
+            android:id="@+id/lvEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:id="@+id/lblEmptyEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="@string/no_available_events"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            app:fontName="Raleway-Light.ttf"/>
+
+    </LinearLayout>
+
+</LinearLayout>

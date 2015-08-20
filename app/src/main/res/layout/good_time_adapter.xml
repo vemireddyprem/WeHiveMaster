@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_good_times"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/good_times_background"
+    android:orientation="vertical">
+
+
+    <uk.co.wehive.hive.utils.SquareImageView
+        android:id="@+id/img_good_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <uk.co.wehive.hive.utils.SquareImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/img_good_time"
+        android:layout_alignEnd="@+id/img_good_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/img_good_time"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/filter_image_profile" />
+
+    <ImageView
+        android:id="@+id/img_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_circle_post" />
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_good_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbl_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbl_place"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_num_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_circle"
+        android:layout_alignRight="@+id/img_circle"
+        android:layout_alignStart="@id/img_circle"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:fontName="Raleway-Bold.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_circle"
+        android:layout_alignRight="@+id/img_circle"
+        android:layout_alignStart="@id/img_circle"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="@string/posts"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:fontName="Raleway-Light.ttf" />
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_background">
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_search_for_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_facebook_friends"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bt_search_follow"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/search_for_users"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_facebook_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_twitter_followers"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bt_facebook_follow"
+        android:drawableLeft="@drawable/ic_facebook_follow"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/facebook_friends"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_twitter_followers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_phone_contacts"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bt_twitter_follow"
+        android:drawableLeft="@drawable/ic_twitter_follow"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/twitter_followers"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_phone_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bt_phone_contacts"
+        android:drawableLeft="@drawable/ic_contacts"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/phone_contacts"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:fontName="Raleway-Light.ttf" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/general_background"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_meme_controls"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btn_font_size_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_text_size"/>
+
+        <Spinner
+            android:id="@+id/spn_font_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_color_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_text_color"/>
+
+    </LinearLayout>
+
+    <uk.co.wehive.hive.utils.SquareRelativeLayout
+        android:id="@+id/rlt_meme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lyt_meme_controls"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/imv_meme_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"/>
+
+        <EditText
+            android:id="@+id/edt_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="@string/top_text"
+            android:inputType="textNoSuggestions"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/edt_bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="@string/bottom_text"
+            android:inputType="textNoSuggestions"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+
+    </uk.co.wehive.hive.utils.SquareRelativeLayout>
+
+</RelativeLayout>

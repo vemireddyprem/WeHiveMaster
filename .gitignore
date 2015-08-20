@@ -1,0 +1,14 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
+/build
+.idea/*
+*.iml
+*.apk
+*.idea
+/facebook/build
+libraryproject/build/
+ambilWarna/build/
+androidffmpeglibrary/build/
+mp4parser/build/

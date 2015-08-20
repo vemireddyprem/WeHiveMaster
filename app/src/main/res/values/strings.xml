@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">weHive</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="something_wrong">Something is wrong</string>
+    <string name="success">Success</string>
+    <string name="email_required">Email Address required</string>
+    <string name="password_required">Password required</string>
+    <string name="please_try_again">Please try again</string>
+    <string name="connection_lost">Connection Lost</string>
+    <string name="internet_connection">The internet connection appears to be offline</string>
+    <string name="all_fields_are_required">All fields are required</string>
+    <string name="password_must_be_same">Password must be the same.</string>
+    <string name="password_must_be_over_five">Password must be more than five characters.</string>
+    <string name="or">or</string>
+    <string name="done">Done</string>
+    <string name="next">NEXT</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <string name="email_exist">The email already exist.</string>
+    <string name="username_exist">The username already exist.</string>
+    <string name="select_image">Select Image</string>
+    <string name="follow_tracking">Follow Tracking</string>
+
+    <!-- User preferences-->
+    <string name="user_preferences">user_preferences</string>
+    <string name="prefereces_is_first_time_user">preferences_first_time_user</string>
+    <string name="preferences_access_token">preferences_access_token</string>
+    <string name="preferences_user_id">preferences_user_id</string>
+    <string name="preferences_username">preferences_username</string>
+    <string name="preferences_first_name">preferences_first_name</string>
+    <string name="preferences_last_name">preferences_last_name</string>
+    <string name="preferences_bio">preferences_bio</string>
+    <string name="preferences_photo">preferences_photo</string>
+    <string name="preferences_follow">preferences_follow</string>
+    <string name="preferences_following">preferences_following</string>
+    <string name="preferences_followers">preferences_followers</string>
+    <string name="preferences_events">preferences_events</string>
+    <string name="preferences_city">preferences_city</string>
+    <string name="preferences_city_code">preferences_city_code</string>
+    <string name="preferences_country">preferences_country</string>
+    <string name="preferences_blocked">preferences_blocked</string>
+    <string name="preferences_id_facebook">preferences_id_facebook</string>
+    <string name="preferences_id_twitter">preferences_id_twitter</string>
+    <string name="preferences_link">preferences_link</string>
+    <string name="preferences_fbUsername">preferences_fbUsername</string>
+    <string name="preferences_autocheckin">preferences_autocheckin</string>
+    <string name="preferences_count_newsfeed">preferences_count_newsfeed</string>
+    <string name="preferences_newsfeed_counter_menu">preferences_newsfeed_counter_menu</string>
+    <string name="preferences_notifications_counter_menu">preferences_notifications_counter_menu</string>
+    <string name="preferences_set_new_fragment">preferences_set_new_fragment</string>
+    <string name="preferences_count_notifications">preferences_count_notifications</string>
+    <string name="preferences_count_connections">preferences_count_connections</string>
+    <string name="preferences_email">preferences_email</string>
+    <string-array name="user_profile_menu">
+        <item>Edit Profile</item>
+        <item>Follow People</item>
+        <item>Follow Artist</item>
+    </string-array>
+    <string-array name="report_user_menu">
+        <item>Report User</item>
+        <item>Block And Unfollow</item>
+    </string-array>
+
+    <!-- ForgotPasswordFragment-->
+    <string name="email_username_required">Please enter an email address or username.</string>
+
+    <!-- fragment_login -->
+    <string name="already_hive_user">Already a weHive User?</string>
+    <string name="new_user">Are you a new user?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="use_facebook">USE FACEBOOK</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Log in</string>
+    <string name="email_or_username">Email or username</string>
+    <string name="send">SEND</string>
+    <string name="log_in">LOGIN</string>
+    <string name="back">BACK</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="explore">EXPLORE</string>
+    <string name="we_hive">weHive</string>
+    <string name="photo">Photo</string>
+
+    <!-- signup_fragment -->
+    <string name="sign_up_title">Sign up</string>
+    <string name="bt_register">REGISTER</string>
+    <string name="lb_use_email">OR USE EMAIL</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="username">Username</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="login_sign">Login</string>
+    <string name="accept_terms">By registering I accept weHive\'s Terms of Services and Privacy Policy</string>
+    <string-array name="image_type">
+        <item>Take Picture</item>
+        <item>Select From Gallery</item>
+    </string-array>
+
+    <!--drawer menu -->
+    <string-array name="options_menu">
+        <item>@string/menu_option_user</item>
+        <item>@string/menu_option_events</item>
+        <item>@string/menu_option_notifications</item>
+        <item>@string/menu_option_newsfeed</item>
+        <item>@string/menu_option_settings</item>
+    </string-array>
+    <string name="menu_option_user">User</string>
+    <string name="menu_option_events">Events</string>
+    <string name="menu_option_notifications">Notifications</string>
+    <string name="menu_option_newsfeed">NewsFeed</string>
+    <string name="menu_option_settings">Settings</string>
+
+    <!--Photo carousel menu -->
+    <string-array name="photo_carousel_menu">
+        <item>@string/share_media</item>
+        <item>@string/flag_media</item>
+        <item>@string/show_likers</item>
+    </string-array>
+    <string name="share_media">Share Media</string>
+    <string name="flag_media">Flag Media</string>
+    <string name="show_likers">Show Likers</string>
+
+    <!--user profile fragment -->
+    <string name="followers">Followers</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="events">Events</string>
+    <string name="good_times">GOOD TIMES</string>
+    <string name="posts">Posts</string>
+    <string name="good_time_empty">This section will have your events as soon you start attending and posting!</string>
+
+    <!--forgot password menu -->
+    <string name="change_password">Change Password</string>
+
+    <!--settings fragment -->
+    <string name="automatic_check_in_to_events">Automatic Check-In to Events</string>
+    <string name="automatic_checkin_warning_message">This requires background location monitoring and may affect battery performance</string>
+    <string name="logout">LOGOUT</string>
+    <string name="app_id">237911446408125</string>
+    <string name="title_facebook_login">Facebook Login</string>
+    <string name="old_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="repeat_new_password">Repeat password</string>
+    <string name="save">SAVE</string>
+
+    <!--follow people fragment -->
+    <string name="follow_people_title">Follow People</string>
+    <string name="search_for_users">SEARCH FOR USERS</string>
+    <string name="facebook_friends">FACEBOOK FRIENDS</string>
+    <string name="twitter_followers">TWITTER FOLLOWERS</string>
+    <string name="phone_contacts">PHONE CONTACTS</string>
+    <string name="problem_open_facebook">Problem opening facebook account</string>
+    <string name="problem_open_twitter">Problem opening twitter account</string>
+    <string name="invite_facebook">You don´t have any Facebook contacts using weHive. Invite them all!</string>
+    <string name="invite_twitter">You don´t have any Twitter contacts using weHive. Invite them all!</string>
+    <string name="invite_phone">You don´t have any phone contact using this app</string>
+
+    <!--edit user profile fragment -->
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="location">Location</string>
+    <string name="city">City</string>
+    <string name="bio">Bio</string>
+    <string name="connect_with_facebook">CONNECT WITH FACEBOOK</string>
+    <string name="connect_with_twitter">CONNECT WITH TWITTER</string>
+    <string name="connected_to_twitter">CONNECTED TO TWITTER</string>
+    <string name="sign_up_fb_instuctions">Choose a username, password and set your phone number</string>
+    <string name="terms_and_conditions_intro">I have read and agreed to the Terms and Conditions</string>
+    <string name="password_required_edit">Password field is required</string>
+    <string name="firstname_required_edit">First Name field is required</string>
+    <string name="lastname_required_edit">Last Name field is required</string>
+    <string name="error_twitter_login">This Twitter account is already in use, please try again</string>
+    <string name="changes_have_been_saved_successfully">Changes have been saved successfully</string>
+
+    <!--view ids -->
+    <string name="id_member_network">idMemberNetwork</string>
+    <string name="id_member_network_state">idMemberNetworkState</string>
+    <string name="member_network_position">memberNetworkPosition</string>
+    <string name="accept_terms_conditions">I have read and agreed to the Terms and Conditions</string>
+    <string name="terms_and_conditions_title">Terms and Conditions</string>
+    <string name="terms_and_conditions_not_accepted">You must accept our Terms and Conditons</string>
+
+    <!--Social network fragment -->
+    <string name="search">Search</string>
+    <string name="phone_contacts_tile">Phone Contacts</string>
+    <string name="facebook_friends_title">Facebook Friends</string>
+    <string name="twitter_friends_title">Twitter Friends</string>
+    <string name="search_for_users_title">Search Users</string>
+    <string name="track_artists_title">Track Artists</string>
+
+    <!--Create comment or post fragment -->
+    <string name="comment">COMMENT</string>
+    <string name="send_comment">Send</string>
+    <string name="you_need_write_a_comment">You need write a comment</string>
+    <string name="must_write_some_to_post">Must write some to post</string>
+    <string name="you_cant_post_in_this_event">You can\'t post in this event</string>
+    <string name="write_a_post">Write a post</string>
+    <string name="you_are_not_allowed_to_post">You are not allowed to post</string>
+    <string name="you_need_to_track_this_event_to_leave_a_post">You need to track this event to leave a post.</string>
+    <string name="you_cannot_post_to_this_event_yet">You can\'t post to this event yet.</string>
+    <string name="user_not_fount">User not found</string>
+
+    <!--Share comment fragment -->
+    <string name="share">SHARE:</string>
+    <string name="say_something_about_this_post">Say something about this post</string>
+
+    <!--User events -->
+    <string name="nearby">Nearby</string>
+    <string name="trending">Trending</string>
+    <string name="recommended">Recommended</string>
+    <string name="past">Past</string>
+    <string name="no_available_events">No available Events</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="id_gcm">id_gcm</string>
+    <string name="version_app">1</string>
+    <string name="select_social_network">You need to select a social network</string>
+    <string name="disconnected_from_twitter">Your twitter account has been successfully disconnected from your weHive account</string>
+    <string name="why_report_user">Please tell us why you would like to report this user</string>
+    <string name="block_user">Are you sure you want to block and unfollow this user?</string>
+
+    <!--Event detail -->
+    <string name="event_details_title">Event Details</string>
+    <string name="everything">Everything</string>
+    <string name="live">Live</string>
+    <string name="buzzing">Buzzing</string>
+    <string name="track">Track</string>
+    <string name="tracking">Tracking</string>
+    <string name="check_in">Check-in</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+    <string name="tracked">Tracked Events</string>
+
+    <!--Search view -->
+    <string name="date_from">DATE FROM</string>
+    <string name="all_artists">ALL ARTISTS</string>
+    <string name="search_location">LOCATION</string>
+    <string name="date_to">DATE TO</string>
+    <string name="search_button">SEARCH</string>
+    <string name="you_need_select_a_location">You need select a location</string>
+
+    <string name="error_disconnect_twitter">We couldn\'t disconnect your twitter account</string>
+    <string name="unblock">unblock</string>
+    <string name="user_blocked">has been blocked</string>
+    <string name="user_unblocked">has been unblocked</string>
+    <string name="user_reported">has been reported</string>
+    <string name="sure_disconnect_twitter">Are you sure you want to disconnect your twitter account?</string>
+
+    <!-- Camera -->
+    <string name="need_camera">Error you need camera</string>
+    <string name="cancel_camera">CANCEL</string>
+    <string name="camera_inactive">Inactive</string>
+
+    <!-- Notifications -->
+    <string name="someone">When someone starts to follow me</string>
+    <string name="posted">When someone comments on something I posted</string>
+    <string name="mentions">When someone mentions me in a post</string>
+    <string name="likesposted">When someone likes something I posted</string>
+    <string name="trackedartist">When a new concert is announced by a tracked artist</string>
+    <string name="resharesposted">When someone reshares something I posted</string>
+    <string name="trackedposts">When a tracked artist post something</string>
+    <string name="goodtimesgalery">When the Good Times gallery of an event you have been to becomes available</string>
+    <string name="trackedevent">When a tracked event is about to start</string>
+    <string name="notificationsettings">Notifications Settings</string>
+
+    <string name="tracked_event_title">Tracked Events</string>
+
+    <!--Meme creator view -->
+    <string name="top_text">TOP TEXT</string>
+    <string name="bottom_text">BOTTOM TEXT</string>
+
+    <!--select issue-->
+    <string name="select_issue">Select Issue</string>
+    <string name="spam">Spam</string>
+    <string name="post_spam">This post may be spam or from a spam account</string>
+    <string name="compromised">Compromised</string>
+    <string name="usermay">This user may not be control of their account</string>
+    <string name="abusive">Abusive</string>
+    <string name="violationhive">This post may be in violation of Hive terms</string>
+    <string name="report">Report</string>
+
+    <string-array name="filter_types">
+        <item>None</item>
+        <item>Black</item>
+        <item>Boost 1</item>
+        <item>Boost 2</item>
+        <item>Boost 3</item>
+        <item>Brightness</item>
+        <item>Color blue</item>
+        <item>Color green</item>
+        <item>Color red</item>
+        <item>Color depth 32</item>
+        <item>Color depth 64</item>
+        <item>Contrast</item>
+        <item>Emboss</item>
+        <item>Engrave</item>
+        <item>Flea</item>
+        <item>Gamma</item>
+        <item>Gaussian blue</item>
+        <item>Gray scale</item>
+        <item>Hue</item>
+        <item>Invert</item>
+        <item>Mean remove</item>
+        <item>Saturation</item>
+        <item>Sepia</item>
+        <item>Sepia blue</item>
+        <item>Sepia green</item>
+        <item>Sheding cyan</item>
+        <item>Sheding green</item>
+        <item>Sheding yellow</item>
+        <item>Smooth</item>
+        <item>Tint</item>
+    </string-array>
+
+    <!--CommentsGoodTimesDetail view -->
+    <string name="post_title">Post</string>
+    <string name="delete_post">Are you sure you want to delete this post?</string>
+
+    <string name="no_friends_are_tracking">no friends are tracking</string>
+    <string name="friends_are_tracking">friends are tracking</string>
+    <string name="friend_is_tracking">friend is tracking</string>
+    <string name="lineup">LINEUP :</string>
+    <string name="like">Like</string>
+    <string name="far_away_checkin">You\'re too far away. You need to be closer to the venue to check-in.</string>
+
+    <string name="post_has_been_removed">Post has been removed</string>
+
+    <string name="friend">Friend</string>
+    <string name="artist">Artist</string>
+    <string name="user">User</string>
+    <string name="report_user">Report user</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="pending_post">Pending post</string>
+    <string name="pending_posts">Pending Posts</string>
+    <string name="couldnt_create_post_post_saved">Couldn\'t create post, post saved</string>
+    <string name="post_image">Post Image</string>
+    <string name="publish_post">Publish Post</string>
+    <string name="you_need_log_in_or_sign_up_to_add_comments">You need log in or sign up to add comments</string>
+    <string name="no_image_available">No image available</string>
+    <string name="message_error">Error</string>
+    <string name="message_user_not_found">User not found</string>
+    <string name="likes_counter_tag">like_counter_likes</string>
+    <string name="reload_all">Reload All</string>
+    <string name="delete">Delete</string>
+    <string name="post">Post</string>
+    <string name="no_data_available">No data available</string>
+    <string name="you_can_no_longer_post_to_this_event">You can no longer post to this event.</string>
+    <string name="username_already_exists_please_try_again">Username already exists. Please try again.</string>
+    <string name="you_can_access_your_good_time">You can access your Good Time 2 hours after the event has ended.</string>
+
+    <!-- fried tasty toasted toast data-->
+    <string name="toast_error_updating">Error updating&#8230;</string>
+    <string name="toast_event_coming_soon">Events coming soon&#8230;</string>
+    <string name="toast_coming_soon">Coming soon&#8230;</string>
+    <string name="toast_news_coming_soon">News feed coming soon&#8230;</string>
+    <string name="toast_video_too_long">Video cannot be more than 30s</string>
+
+</resources>

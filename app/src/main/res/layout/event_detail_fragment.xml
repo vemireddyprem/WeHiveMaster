@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/general_background">
+
+    <uk.co.wehive.hive.utils.RectangularImageView
+        android:id="@+id/img_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <uk.co.wehive.hive.utils.RectangularImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/transparency_image_events"/>
+
+    <ImageView
+        android:id="@+id/img_carousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:src="@drawable/ic_galery"/>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:fontName="Raleway-SemiBold.ttf"/>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_artist"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/wehive_dark_blue"
+        android:textSize="16sp"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <LinearLayout
+        android:id="@+id/lyt_actions_on_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_event"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp">
+
+        <uk.co.wehive.hive.utils.CustomFontButton
+            android:id="@+id/btn_track"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_event_detail"
+            android:text="@string/track"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:fontName="Raleway-Light.ttf"/>
+
+        <uk.co.wehive.hive.utils.CustomFontButton
+            android:id="@+id/btn_check_in"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_event_detail_background"
+            android:text="@string/check_in"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:fontName="Raleway-Light.ttf"/>
+
+        <ImageButton
+            android:id="@+id/btn_write"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_event_detail_background"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/bt_write"/>
+
+        <ImageButton
+            android:id="@+id/btn_camera"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_event_detail_background"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/bt_camera"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/lyt_actions_on_events"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_corners_buttons_events_user"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tbt_everything"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_button_background_right_selector"
+            android:checked="true"
+            android:textColor="@color/text_toogle_button_color_selector"
+            android:textOff="@string/everything"
+            android:textOn="@string/everything"/>
+
+        <ToggleButton
+            android:id="@+id/tbt_live"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_button_background_center_selector"
+            android:checked="false"
+            android:textColor="@color/text_toogle_button_color_selector"
+            android:textOff="@string/live"
+            android:textOn="@string/live"/>
+
+        <ToggleButton
+            android:id="@+id/tbt_buzzing"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_button_background_left_selector"
+            android:checked="false"
+            android:textColor="@color/text_toogle_button_color_selector"
+            android:textOff="@string/buzzing"
+            android:textOn="@string/buzzing"/>
+    </LinearLayout>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_pending_posts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:background="@color/action_bar_background"
+        android:drawableRight="@drawable/ic_right_arrow"
+        android:gravity="center|left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/list_everything"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/txt_pending_posts"/>
+
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/list_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/txt_pending_posts"
+        android:visibility="gone"/>
+
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/list_buzzing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/txt_pending_posts"
+        android:visibility="gone"/>
+
+</RelativeLayout>

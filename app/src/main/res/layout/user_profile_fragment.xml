@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/general_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/img_user_photo"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_userphoto_menu"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toRightOf="@+id/img_user_photo"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:fontName="Raleway-Light.ttf"/>
+
+            <uk.co.wehive.hive.utils.CustomFontTextView
+                android:id="@+id/txt_user_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                app:fontName="Raleway-Light.ttf"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_social"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/img_twitter_connect"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_share_twitter"
+                    android:contentDescription="@string/twitter"/>
+
+                <ImageView
+                    android:id="@+id/img_facebook_connect"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_share_facebook"
+                    android:contentDescription="@string/facebook"/>
+            </LinearLayout>
+
+            <uk.co.wehive.hive.utils.CustomFontButton
+                android:id="@+id/btn_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bt_following_people_background"
+                android:text="@string/following"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:fontName="Raleway-Light.ttf"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:textColor="@android:color/white"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black">
+
+        <uk.co.wehive.hive.utils.CustomFontButton
+            android:id="@+id/btn_user_followers"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_button_background"
+            android:text="@string/followers"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:fontName="Raleway-Light.ttf"/>
+
+        <uk.co.wehive.hive.utils.CustomFontButton
+            android:id="@+id/btn_user_following"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/tab_button_background"
+            android:text="@string/following"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:fontName="Raleway-Light.ttf"/>
+
+        <uk.co.wehive.hive.utils.CustomFontButton
+            android:id="@+id/btn_user_events"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_button_background"
+            android:text="@string/events"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:fontName="Raleway-Light.ttf"/>
+    </LinearLayout>
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/label_background"
+        android:text="@string/good_times"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <GridView
+        android:id="@+id/grid_goodtimes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/good_times_background"
+        android:horizontalSpacing="0dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp"/>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_empty_goodtimes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/good_time_empty"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:fontName="Raleway-Light.ttf"/>
+
+</LinearLayout>

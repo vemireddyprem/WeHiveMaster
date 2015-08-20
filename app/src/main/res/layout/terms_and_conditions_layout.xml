@@ -1,0 +1,16 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/general_background">
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_terms_and_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:fontName="Raleway-Light.ttf"/>
+
+</ScrollView>

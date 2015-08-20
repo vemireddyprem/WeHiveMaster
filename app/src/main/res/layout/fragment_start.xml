@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_we_hive" />
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_we_hive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imageView"
+        android:text="@string/we_hive"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_already_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:text="@string/already_hive_user"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_already_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bt_log_in_background"
+        android:contentDescription="@string/app_name"
+        android:text="@string/log_in"
+        android:textColor="@android:color/white"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_log_in"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="@string/new_user"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_new_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bt_sign_up_background"
+        android:contentDescription="@string/app_name"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white"
+        app:fontName="Raleway-Light.ttf" />
+
+    <uk.co.wehive.hive.utils.CustomFontButton
+        android:id="@+id/btn_explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bt_explore"
+        android:contentDescription="@string/app_name"
+        android:text="@string/explore"
+        android:textColor="@android:color/white"
+        app:fontName="Raleway-Light.ttf" />
+</RelativeLayout>

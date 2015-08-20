@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/general_background"
+              android:orientation="vertical">
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_pending_posts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/action_bar_background"
+        android:drawableRight="@drawable/ic_right_arrow"
+        android:gravity="center|left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corners_buttons_events_user">
+
+        <ToggleButton
+            android:id="@+id/tbt_nearby"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/toogle_button_background_right_selector"
+            android:checked="true"
+            android:textColor="@color/text_toogle_button_color_selector"
+            android:textOff="@string/nearby"
+            android:textOn="@string/nearby"
+            android:textSize="@dimen/text_size_14"/>
+
+        <ToggleButton
+            android:id="@+id/tbt_trending"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_button_background_center_selector"
+            android:checked="false"
+            android:textColor="@color/text_toogle_button_color_selector"
+            android:textOff="@string/trending"
+            android:textOn="@string/trending"
+            android:textSize="@dimen/text_size_14"/>
+
+        <ToggleButton
+            android:id="@+id/tbt_recommended"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_button_background_left_selector"
+            android:checked="false"
+            android:textColor="@color/text_toogle_button_color_selector"
+            android:textOff="@string/recommended"
+            android:textOn="@string/recommended"
+            android:textSize="@dimen/text_size_14"/>
+    </LinearLayout>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/lbl_not_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_available_events"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:fontName="Raleway-Light.ttf"/>
+
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/plv_nearby_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/plv_trending_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/plv_recommended_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

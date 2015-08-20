@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="icons_options_menu">
+        <item>@drawable/ic_profile_menu</item>
+        <item>@drawable/ic_events_menu</item>
+        <item>@drawable/ic_notifications_menu</item>
+        <item>@drawable/ic_newsfeed_menu</item>
+        <item>@drawable/ic_settings_menu</item>
+    </string-array>
+</resources>

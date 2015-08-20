@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_network_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/network_member_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img_member_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_userphoto_menu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/txt_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/txt_time"
+        android:layout_toRightOf="@+id/photo"
+        android:orientation="vertical">
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:id="@+id/txt_member_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <uk.co.wehive.hive.utils.CustomFontTextView
+            android:id="@+id/txt_member_activity_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            app:fontName="Raleway-Light.ttf" />
+
+    </LinearLayout>
+
+    <uk.co.wehive.hive.utils.CustomFontTextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txt_info"
+        android:layout_marginRight="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/wehive_dark_blue"
+        android:textSize="14sp"
+        app:fontName="Raleway-Light.ttf" />
+
+</RelativeLayout>

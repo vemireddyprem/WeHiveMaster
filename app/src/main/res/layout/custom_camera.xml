@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <uk.co.wehive.hive.utils.SquareImageView
+        android:id="@+id/img_square"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_square"
+        android:background="@drawable/general_background"/>
+
+    <ImageView
+        android:id="@+id/img_take_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bt_take_camera"/>
+
+    <ImageView
+        android:id="@+id/img_camera_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_take_picture"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_mode_camera_active"/>
+
+    <ImageView
+        android:id="@+id/img_video_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_camera_mode"
+        android:layout_alignLeft="@+id/img_camera_mode"
+        android:layout_alignStart="@+id/img_camera_mode"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_video_camera_inactive"/>
+
+    <ImageView
+        android:id="@+id/img_gallery_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_video_mode"
+        android:layout_alignLeft="@+id/img_video_mode"
+        android:layout_alignStart="@+id/img_video_mode"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_gallery_camera_inactive"/>
+
+    <ImageView
+        android:id="@+id/img_change_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_change_camera_inactive"
+        android:contentDescription="@string/app_name"/>
+
+    <ImageView
+        android:id="@+id/img_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_camera_mode"
+        android:layout_alignEnd="@+id/img_change_camera"
+        android:layout_alignLeft="@+id/img_change_camera"
+        android:layout_alignRight="@+id/img_change_camera"
+        android:layout_alignStart="@+id/img_change_camera"
+        android:layout_below="@+id/img_gallery_mode"
+        android:layout_toEndOf="@+id/img_change_camera"
+        android:layout_toRightOf="@+id/img_change_camera"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_flash_camera_inactive"/>
+
+</RelativeLayout>
